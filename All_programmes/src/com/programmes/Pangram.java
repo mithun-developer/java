@@ -1,0 +1,42 @@
+package com.programmes;
+
+import java.util.LinkedHashMap;
+
+public class Pangram {
+
+	public static void main(String[] args) {
+		
+		
+		String name = "THE QUICK BROWN FOX JUMPS OVER LAZY DOG";
+		name=name.replace(" ", "");
+		
+		char a[] = name.toCharArray();
+		int size = a.length;
+		int b[] =  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+		
+		LinkedHashMap<Character,Integer> map = new LinkedHashMap();
+		
+		int i=0;
+		
+		while(i !=size) {
+			int index=a[i]-65;
+			b[index]=1;
+			i++;
+		}
+		
+		i=0;
+		while(i !=26) {
+			if(b[i]!=1) {
+				System.out.println("Not Pangram");
+				System.exit(0);
+			}else {
+				i++;
+			}
+		}
+		
+		System.out.println("Pangram");
+
+	}
+		
+
+}
