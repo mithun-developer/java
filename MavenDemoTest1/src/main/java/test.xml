@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="yahoo test">
+  
+  <parameter name="browser" value="chrome"/>
+  
+  <parameter name="url" value="https://login.yahoo.com"/>
+  
+  <parameter name="username" value="mithun_sherry"/>
+  
+  
+    <classes>
+       <class name="com.parameters.ParamenetrTest" />
+    </classes>
+  </test>
+ 
+  
+</suite>
+ 
