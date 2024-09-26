@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="TestNg Automation">
+<listeners >
+<listener class-name = "com.test.MyTransformer" />
+</listeners>
+
+
+  <test name="Nopackage">
+    <classes>
+       <class name="com.test.MyTest" />
+     
+    </classes>
+  </test>
+ 
+  
+</suite>
